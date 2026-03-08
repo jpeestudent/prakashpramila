@@ -86,25 +86,25 @@ const EntryPage = ({ onEnter, onAudioEnabled }) => {
     if (previousSide === null) {
       stopAllAudio();
       if (side === 'groom') {
-        playAudioWithFallback(publicUrl('/audio/groom_hover_welcome.m4a'), "Hey! Are you on the groom's side? Click here to enter!", 0.9);
+        playAudioWithFallback(publicUrl('/audio/groom_hover_welcome.mp3'), "Hey! Are you on the groom's side? Click here to enter!", 0.9);
       } else {
-        playAudioWithFallback(publicUrl('/audio/bride_hover_welcome.m4a'), "Hello! Are you on the bride's side? Come on in, click here!", 1.3);
+        playAudioWithFallback(publicUrl('/audio/bride_hover_welcome.mp3'), "Hello! Are you on the bride's side? Come on in, click here!", 1.3);
       }
     } else if (previousSide !== side) {
       stopAllAudio();
       if (previousSide === 'groom') {
-        playAudioWithFallback(publicUrl('/audio/groom_hover_jealous.m4a'), "Hey hey hey! Stay here on my side!", 0.85, 1.2).then(() => {
+        playAudioWithFallback(publicUrl('/audio/groom_hover_jealous.mp3'), "Hey hey hey! Stay here on my side!", 0.85, 1.2).then(() => {
           conversationTimeoutRef.current = setTimeout(() => {
             if (currentSideRef.current === 'bride') {
-              playAudioWithFallback(publicUrl('/audio/bride_response_to_groom.m4a'), "They're MY side now. Welcome!", 1.3, 1.1);
+              playAudioWithFallback(publicUrl('/audio/bride_response_to_groom.mp3'), "They're MY side now. Welcome!", 1.3, 1.1);
             }
           }, 500);
         });
       } else {
-        playAudioWithFallback(publicUrl('/audio/bride_hover_jealous.m4a'), "Wait! Don't leave me!", 1.35, 1.2).then(() => {
+        playAudioWithFallback(publicUrl('/audio/bride_hover_jealous.mp3'), "Wait! Don't leave me!", 1.35, 1.2).then(() => {
           conversationTimeoutRef.current = setTimeout(() => {
             if (currentSideRef.current === 'groom') {
-              playAudioWithFallback(publicUrl('/audio/groom_response_to_bride.m4a'), "Ha! They came back to MY side!", 0.9, 1.1);
+              playAudioWithFallback(publicUrl('/audio/groom_response_to_bride.mp3'), "Ha! They came back to MY side!", 0.9, 1.1);
             }
           }, 500);
         });
@@ -122,25 +122,25 @@ const EntryPage = ({ onEnter, onAudioEnabled }) => {
     if (previousSide === null) {
       stopAllAudio();
       if (side === 'groom') {
-        playAudioWithFallback(publicUrl('/audio/groom_hover_welcome.m4a'), "Hey! Are you on the groom's side?", 0.9);
+        playAudioWithFallback(publicUrl('/audio/groom_hover_welcome.mp3'), "Hey! Are you on the groom's side?", 0.9);
       } else {
-        playAudioWithFallback(publicUrl('/audio/bride_hover_welcome.m4a'), "Hello! Are you on the bride's side?", 1.3);
+        playAudioWithFallback(publicUrl('/audio/bride_hover_welcome.mp3'), "Hello! Are you on the bride's side?", 1.3);
       }
     } else if (previousSide !== side) {
       stopAllAudio();
       if (previousSide === 'groom') {
-        playAudioWithFallback(publicUrl('/audio/groom_hover_jealous.m4a'), "Stay here!", 0.85, 1.2).then(() => {
+        playAudioWithFallback(publicUrl('/audio/groom_hover_jealous.mp3'), "Stay here!", 0.85, 1.2).then(() => {
           conversationTimeoutRef.current = setTimeout(() => {
             if (currentSideRef.current === 'bride') {
-              playAudioWithFallback(publicUrl('/audio/bride_response_to_groom.m4a'), "Welcome to my side!", 1.3, 1.1);
+              playAudioWithFallback(publicUrl('/audio/bride_response_to_groom.mp3'), "Welcome to my side!", 1.3, 1.1);
             }
           }, 500);
         });
       } else {
-        playAudioWithFallback(publicUrl('/audio/bride_hover_jealous.m4a'), "Don't leave!", 1.35, 1.2).then(() => {
+        playAudioWithFallback(publicUrl('/audio/bride_hover_jealous.mp3'), "Don't leave!", 1.35, 1.2).then(() => {
           conversationTimeoutRef.current = setTimeout(() => {
             if (currentSideRef.current === 'groom') {
-              playAudioWithFallback(publicUrl('/audio/groom_response_to_bride.m4a'), "Welcome back!", 0.9, 1.1);
+              playAudioWithFallback(publicUrl('/audio/groom_response_to_bride.mp3'), "Welcome back!", 0.9, 1.1);
             }
           }, 500);
         });

@@ -66,7 +66,7 @@ const WeddingDetails = () => {
             time="6:00 PM onwards"
             location="Thangabharathi Mandabam, Spicnagar, Thoothukudi"
             description="Join us for the evening reception and celebrate our new beginning with dinner and joy."
-            mapLink="https://maps.app.goo.gl/faATRWzAZKXBTS636"
+            mapLink="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.514361656841!2d78.1188435!3d8.737577600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b03ee071e5b7be3%3A0x238b042f9cc75acc!2sThanga%20Bharathi%20Thirumana%20Mandapam!5e0!3m2!1sen!2sin!4v1772924497300!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
             showMap={true}
           />
 
@@ -75,7 +75,7 @@ const WeddingDetails = () => {
         {/* Map only for Reception */}
         <div className="map-container">
           <iframe
-            src="https://maps.app.goo.gl/faATRWzAZKXBTS636"
+            src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.514361656841!2d78.1188435!3d8.737577600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b03ee071e5b7be3%3A0x238b042f9cc75acc!2sThanga%20Bharathi%20Thirumana%20Mandapam!5e0!3m2!1sen!2sin!4v1772924497300!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
             width="100%"
             height="400"
             style={{ border: 0 }}

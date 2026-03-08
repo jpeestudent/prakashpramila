@@ -36,7 +36,7 @@ const MouseTrail = () => {
             will-change: transform, opacity;
         `;
 
-        // Inline SVG heart with "SV" text
+        // Inline SVG heart with "JP" text
         wrapper.innerHTML = `
             <svg viewBox="0 0 100 90" xmlns="http://www.w3.org/2000/svg"
                  width="${size}" height="${size * 0.9}">
@@ -57,7 +57,7 @@ const MouseTrail = () => {
                     fill="white"
                     opacity="0.18"
                 />
-                <!-- "SV" text centered in heart -->
+                <!-- "JP" text centered in heart -->
                 <text x="50" y="54"
                     font-family="'Cormorant Garamond','Times New Roman',serif"
                     font-size="28"
@@ -68,7 +68,7 @@ const MouseTrail = () => {
                     dominant-baseline="middle"
                     opacity="0.95"
                     letter-spacing="2"
-                >SV</text>
+                >JP</text>
             </svg>
         `;
 
