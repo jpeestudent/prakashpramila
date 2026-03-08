@@ -40,7 +40,7 @@ const EventCard = ({ title, date, time, location, description, mapLink, showMap 
     </a>
 
     <a
-      href="https://wa.me/919999999999?text=Hello%20I%20will%20attend%20your%20wedding"
+      href="https://wa.me/918610442528?text=Hello%20I%20will%20attend%20your%20wedding"
       target="_blank"
       rel="noopener noreferrer"
       className="btn map-btn"
